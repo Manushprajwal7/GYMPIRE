@@ -10,7 +10,7 @@ function PaymentContent() {
   const [paymentUrl, setPaymentUrl] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
-  const upiId = PROCESS.ENV.NEXT_PUBLIC_UPI_ID;
+  const upiId = process.env.NEXT_PUBLIC_UPI_ID || "sinumathew2-2@okicici";
   const gymName = "GYMPIRE";
 
   const plans: Record<
